@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/future/image';
-import emojiWavingHand from '../static/images/emojis/emoji_waving-hand.png'
+import emojiWavingHand from '@emojis/emoji_waving-hand.png';
 export default function Home() {
   return (
     <>

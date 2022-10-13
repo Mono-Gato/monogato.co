@@ -1,10 +1,12 @@
 {
-  "compilersOptions":{
-      "baseUrl": "src",
-      "paths":{
-          "@pages": [
-              "pages/"
-          ]
+    "compilerOptions": {
+      "baseUrl": "src/",
+      "paths": {
+        "@pages/*": ["pages/*"],
+        "@styles/*": ["styles/*"],
+        "@emojis/*": ["static/images/emojis/*"],
+        "@icons/*": ["static/images/icons/*"],
+        "@memojis/*": ["static/images/memojis/*"],
       }
+    }
   }
-}
