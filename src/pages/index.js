@@ -39,9 +39,11 @@ export default function Home() {
                 <Image src={emojiBriefcase} className={styles.featured__emoji} alt="icon briefcase" width={36} height={36} /> My new web portfolio is coming soon
               </h3>
             </div>
-            <button className={(styles.button__primary, styles.button)}>
-              Download CV <Image className={styles.button__emoji} src={emojiWrittingHand} alt="icon writting hand" width={36} height={36} />
-            </button>
+            <Link href="https://drive.google.com/file/d/1lEKc1iVXuXB2PKAliUMvOlyVodl2gFzb/view?usp=sharing">
+              <a target="_blank" className={(styles.button__primary, styles.button)}>
+                Download CV <Image className={styles.button__emoji} src={emojiWrittingHand} alt="icon writting hand" width={36} height={36} />
+              </a>
+            </Link>
           </div>
           <aside className={styles.secondaryInfo}>
             <div className={styles.memoji}>

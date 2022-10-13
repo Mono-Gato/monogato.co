@@ -76,7 +76,9 @@
         justify-content: center;
         align-items: center;
         margin: $spacing_lg auto auto;
-        padding: $spacing_md;
+        padding: $spacing_md $spacing_lg;
+        text-decoration: none;
+        width: fit-content;
         border-radius: 8px;
         color: $color_light;
         border: none;
@@ -205,7 +207,7 @@
         }
         .button{
           margin: 40px 0 0;
-          padding: 20px;
+          padding: 20px 32px;
           border-radius: 12px;
           font-size: 32px;
           border-bottom: 5px solid transparent;
