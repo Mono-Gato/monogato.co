@@ -61,7 +61,7 @@ export default function Home() {
                   </Link>
                 </li>
                 <li className={styles.social__item}>
-                  <Link href="https://www.linkedin.com/in/monogato/">
+                  <Link href="https://github.com/Mono-Gato">
                     <a target="_blank">
                       <Image src={iconSocialGitHub} alt="GitHub Monogato" width={60} height={60} />
                       <p>GitHub</p>
@@ -69,7 +69,7 @@ export default function Home() {
                   </Link>
                 </li>
                 <li className={styles.social__item}>
-                  <Link href="https://www.linkedin.com/in/monogato/">
+                  <Link href="http://www.behance.net/monogato">
                     <a target="_blank">
                       <Image src={iconSocialBehance} alt="Behance Monogato" width={60} height={60} />
                       <p>Behance</p>
@@ -77,7 +77,7 @@ export default function Home() {
                   </Link>
                 </li>
                 <li className={styles.social__item}>
-                  <Link href="https://www.linkedin.com/in/monogato/">
+                  <Link href="https://www.instagram.com/monogato.type/">
                     <a target="_blank">
                       <Image src={iconSocialInstragram} alt="Instagram Monogato" width={60} height={60} />
                       <p>Instagram</p>
