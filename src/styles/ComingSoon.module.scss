@@ -1,0 +1,250 @@
+@import './_vars.scss';
+
+.comingSoon{
+  padding: $spacing_md;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../static/images/bg/bg_light.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .mainInfo{
+      .title{
+        font-family: $font_primary;
+        font-weight: $font_extraBold;
+        font-size: $font_xl;
+        text-align: center;
+        &__emoji{
+          width: 52px;
+          height: 52px;
+          margin-bottom: -6px;
+          margin-left: 4px;
+          object-fit: contain;
+        }
+        &__logo{
+          margin-bottom: -32px;
+          margin-left: 12px;
+          height: 72px;
+          width: 215px;
+        }
+      }
+      p{
+        font-family: $font_secondary;
+        font-size: $font_md;
+        text-align: center;
+        font-weight: $font_regular;
+        color: $color_altern-50;
+        margin-top: calc($spacing_lg + 30px);
+        line-height: 140%;
+        .bold{
+          font-weight: $font_semibold;
+        }
+      }
+      .featured{
+        background-color: $color_primary-10;
+        mix-blend-mode: multiply;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: $spacing_md;
+        border-radius: 8px;
+        width: fit-content;
+        margin: $spacing_lg auto auto;
+        &__emoji{
+          object-fit: contain;
+          width: 20px;
+          height: 20px;
+          margin-right: $spacing_xs;
+          margin-bottom: -3px;
+        }
+        h3{
+          font-size: $font_sm;
+          text-align: center;
+          font-family: $font_secondary;
+          color: $color_primary-90;
+        }
+      }
+      .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: $spacing_lg auto auto;
+        padding: $spacing_md $spacing_lg;
+        text-decoration: none;
+        width: fit-content;
+        border-radius: 8px;
+        color: $color_light;
+        border: none;
+        font-size: $font_sm;
+        font-weight: $font_bold;
+        font-family: $font_primary;
+        text-align: center;
+        mix-blend-mode: multiply;
+        
+        background: linear-gradient($color_secondary-70, $color_secondary-80) padding-box, linear-gradient(to right, #05DBF2, #FBD45F, #F204A7) border-box;
+        border-bottom: 4px solid transparent;
+        transition: .3s all ease-out;
+        transform: scale(1);
+        &:hover{
+          transform: scale(1.08);
+          background: linear-gradient($color_secondary-80, $color_secondary-70) padding-box, linear-gradient(to right, #05DBF2, #FBD45F, #F204A7) border-box;
+        }
+        &__emoji{
+          object-fit: contain;
+          width: 20px;
+          height: 20px;
+          margin-left: $spacing_xs;
+
+        }
+      }
+    }
+
+    .secondaryInfo{
+      .memoji{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        img{
+          object-fit: contain;
+          width: 290px;
+        }
+      }
+      .getInTouch{
+        padding-top: $spacing_xl;
+        .title{
+          font-family: $font_primary;
+          font-size: $font_lg;
+          font-weight: $font_bold;
+          color: $color_altern-50;
+          text-align: center;
+          margin-bottom: $spacing_lg;
+        }
+        .social{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap:$spacing_xl;
+          &__item{
+            list-style: none;
+            a{
+              min-width: 50px;
+              display: block;
+              text-align: center;
+              text-decoration: none;
+              font-family: $font_secondary;
+              font-weight: $font_regular;
+              font-size: $font_s;
+              color: $color_altern-50;
+              transition: .3s all ease-out;
+              transform: scale(1);
+              img{
+                object-fit: contain;
+                width: 45px;
+                height: 45px;
+              }
+              &:hover{
+                transform: scale(1.08);
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media (min-width: 900px){
+
+  .comingSoon{
+    padding: 48px;
+    .container{
+      max-width: 1320px;
+      flex-direction: row;
+      gap: 40px;
+      .mainInfo{
+        .title{
+          font-size: 60px;
+          text-align: left;
+          &__emoji{
+            width: 65px;
+            height: 65px;
+            margin-bottom: -4px;
+            margin-left: 8px;
+          }
+          &__logo{
+            margin-bottom: -40px;
+            margin-left: 16px;
+            height: 96px;
+            width: 288px;
+          }
+        }
+        p{
+          font-size: 36px;
+          text-align: left;
+          margin-top: calc($spacing_lg + 40px);
+        }
+        .featured{
+          padding: 20px;
+          border-radius: 12px;
+          margin:40px 0 0;
+          &__emoji{
+            width: 36px;
+            height: 36px;
+            margin-right: $spacing_xs;
+            margin-bottom: -3px;
+          }
+          h3{
+            font-size: 32px;
+          }
+        }
+        .button{
+          margin: 40px 0 0;
+          padding: 20px 32px;
+          border-radius: 12px;
+          font-size: 32px;
+          border-bottom: 5px solid transparent;
+          &__emoji{
+            width: 40px;
+            height: 40px;
+            margin-left: 8px;
+  
+          }
+        }
+      }
+  
+      .secondaryInfo{
+        .memoji{
+          display: flex;
+        }
+        .getInTouch{
+          padding-top: 75px;
+          .title{
+            font-size: 40px;
+            margin-bottom: 40px;
+          }
+          .social{
+            &__item{
+              a{
+                min-width: 57px;
+                font-size: 16px;
+                img{
+                  width: 60px;
+                  height: 60px;
+                }
+              }
+            }
+          }
+        }
+  
+      }
+    }
+  }
+}
