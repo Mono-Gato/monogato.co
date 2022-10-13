@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/future/image';
-
+import emojiWavingHand from '../static/images/emojis/emoji_waving-hand.png'
 export default function Home() {
   return (
     <>
@@ -12,7 +12,13 @@ export default function Home() {
       <main>
         <section className="comingSoon">
           <div>
-            <h1>Hi there , I’m Monogato</h1>
+            <h1>
+              Hi there{' '}
+              <span>
+                <Image src={emojiWavingHand} alt="Waving Hand" width={65} height={65} />
+              </span>{' '}
+              , I’m Monogato
+            </h1>
             <p>My name is Juan David Niño mostly know as Monogato, I’m a UI/UX Designer and FrontEnd Developer for the web.</p>
             <span>My new web portfolio is coming soon</span>
             <button>Download CV</button>
