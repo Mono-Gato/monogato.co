@@ -4,6 +4,7 @@
       "paths": {
         "@pages/*": ["pages/*"],
         "@styles/*": ["styles/*"],
+        "@brand/*": ["static/images/brand/*"],
         "@emojis/*": ["static/images/emojis/*"],
         "@icons/*": ["static/images/icons/*"],
         "@memojis/*": ["static/images/memojis/*"],
