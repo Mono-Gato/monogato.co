@@ -1,17 +1,20 @@
-$font_title: 'Montserrat', 'Lato', sans-serif;
-$font_paragraph:'Hind', 'Roboto', sans-serif;
+$font_primary: 'Montserrat', 'Lato', sans-serif;
+$font_secondary:'Hind', 'Roboto', sans-serif;
 
-$white: #ffffff;
-$black: #000000;
-$dark: #232830;
+$font_extraBold: 800;
+$font_semibold: 700;
+$font_bold: 600;
+$font_regular: 400;
 
+$color_light: #fff;
 $color_primary-10: #CCFEF3;
 $color_primary-90: #004374;
+$color_secondary-70: #511AB7;
 $color_secondary-80: #391093;
 $color_altern-50: #000043; 
 
-$font_xs: 8px;
-$font_s: 16px;
+$font_s: 12px;
+$font_sm: 16px;
 $font_md: 20px;
 $font_lg: 24px;
 $font_xl: 40px;
@@ -20,5 +23,5 @@ $spacing_xs: 4px;
 $spacing_s: 12px;
 $spacing_md: 16px;
 $spacing_lg: 24px;
-$spacing_xl: 32px;
-$spacing_xxl: 50px;
+$spacing_xl: 36px;
+$spacing_xxl: 48px;

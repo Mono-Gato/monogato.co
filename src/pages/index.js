@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import Head from 'next/head';
 import Image from 'next/future/image';
 import emojiWavingHand from '@emojis/emoji_waving-hand.png';
@@ -10,6 +11,9 @@ import iconSocialInstragram from '@icons/social_instagram.png';
 import iconSocialGitHub from '@icons/social_github.png';
 import imageBrandColor from '@brand/brand_color.png';
 
+import styles from '@styles/ComingSoon.module.scss';
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <>
@@ -18,52 +22,70 @@ export default function Home() {
         <meta name="description" content="Soy Monogato mi nombre es Juan David Niño, soy diseñador y desarrollador. Mi especialidad es el desarrollo paginas y aplicaciones web. Bogota, Co." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="comingSoon">
-        <div>
-          <h1>
-            Hi there{' '}
-            <span>
-              <Image src={emojiWavingHand} alt="Waving Hand" width={65} height={65} />
-            </span>{' '}
-            , I’m{' '}
-            <span>
-              <Image src={imageBrandColor} alt="Monogato" width={215} height={72} />
-            </span>
-          </h1>
-          <p>My name is Juan David Niño mostly know as Monogato, I’m a UI/UX Designer and FrontEnd Developer for the web.</p>
-          <h3>
-            <Image src={emojiBriefcase} alt="icon briefcase" width={36} height={36} /> My new web portfolio is coming soon
-          </h3>
-          <button>
-            Download CV <Image src={emojiWrittingHand} alt="icon writting hand" width={36} height={36} />
-          </button>
+      <section className={styles.comingSoon}>
+        <div className={styles.container}>
+          <div className={styles.mainInfo}>
+            <h1 className={styles.title}>
+              Hi there
+              <Image className={styles.title__emoji} src={emojiWavingHand} alt="Waving Hand" width={65} height={65} />
+              , I’m
+              <Image className={styles.title__logo} src={imageBrandColor} alt="Monogato" width={215} height={72} />
+            </h1>
+            <p>
+              My name is Juan David Niño mostly know as Monogato, I’m a <span className={styles.bold}>UI/UX Designer</span> and <span>FrontEnd Developer</span> for the web.
+            </p>
+            <div className={styles.featured}>
+              <h3>
+                <Image src={emojiBriefcase} className={styles.featured__emoji} alt="icon briefcase" width={36} height={36} /> My new web portfolio is coming soon
+              </h3>
+            </div>
+            <button className={(styles.button__primary, styles.button)}>
+              Download CV <Image className={styles.button__emoji} src={emojiWrittingHand} alt="icon writting hand" width={36} height={36} />
+            </button>
+          </div>
+          <aside className={styles.secondaryInfo}>
+            <div className={styles.memoji}>
+              <Image src={memojiCallMe} alt="Contact me - Monogato" width={300} height={300} priority />
+            </div>
+            <div className={styles.getInTouch}>
+              <h2 className={styles.title}>Get in touch:</h2>
+              <ul className={styles.social}>
+                <li className={styles.social__item}>
+                  <Link href="https://www.linkedin.com/in/monogato/">
+                    <a target="_blank">
+                      <Image src={iconSocialLinkedIn} alt="LinkedIn Monogato" width={60} height={60} />
+                      <p>LinkedIn</p>
+                    </a>
+                  </Link>
+                </li>
+                <li className={styles.social__item}>
+                  <Link href="https://www.linkedin.com/in/monogato/">
+                    <a target="_blank">
+                      <Image src={iconSocialGitHub} alt="GitHub Monogato" width={60} height={60} />
+                      <p>GitHub</p>
+                    </a>
+                  </Link>
+                </li>
+                <li className={styles.social__item}>
+                  <Link href="https://www.linkedin.com/in/monogato/">
+                    <a target="_blank">
+                      <Image src={iconSocialBehance} alt="Behance Monogato" width={60} height={60} />
+                      <p>Behance</p>
+                    </a>
+                  </Link>
+                </li>
+                <li className={styles.social__item}>
+                  <Link href="https://www.linkedin.com/in/monogato/">
+                    <a target="_blank">
+                      <Image src={iconSocialInstragram} alt="Instagram Monogato" width={60} height={60} />
+                      <p>Instagram</p>
+                    </a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </aside>
         </div>
-        <aside>
-          <div>
-            <Image src={memojiCallMe} alt="Contact me - Monogato" width={300} height={300} />
-          </div>
-          <div>
-            <h2>Get in touch:</h2>
-            <ul>
-              <li>
-                <Image src={iconSocialLinkedIn} alt="LinkedIn Monogato" width={60} height={60} />
-                <p>LinkedIn</p>
-              </li>
-              <li>
-                <Image src={iconSocialGitHub} alt="GitHub Monogato" width={60} height={60} />
-                <p>GitHub</p>
-              </li>
-              <li>
-                <Image src={iconSocialBehance} alt="Behance Monogato" width={60} height={60} />
-                <p>Behance</p>
-              </li>
-              <li>
-                <Image src={iconSocialInstragram} alt="Instagram Monogato" width={60} height={60} />
-                <p>Instagram</p>
-              </li>
-            </ul>
-          </div>
-        </aside>
       </section>
     </>
   );
