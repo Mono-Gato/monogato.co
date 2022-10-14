@@ -5,6 +5,7 @@
         "@pages/*": ["pages/*"],
         "@layout/*": ["layout/*"],
         "@styles/*": ["styles/*"],
+        "@bg/*": ["static/images/bg/*"],
         "@brand/*": ["static/images/brand/*"],
         "@emojis/*": ["static/images/emojis/*"],
         "@icons/*": ["static/images/icons/*"],

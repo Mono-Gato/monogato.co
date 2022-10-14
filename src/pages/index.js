@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Head from 'next/head';
+import Img from 'next/image';
 import Image from 'next/future/image';
 import emojiWavingHand from '@emojis/emoji_waving-hand.png';
 import emojiBriefcase from '@emojis/emoji_briefcase.png';
@@ -10,6 +11,7 @@ import iconSocialLinkedIn from '@icons/social_linkedin.png';
 import iconSocialInstragram from '@icons/social_instagram.png';
 import iconSocialGitHub from '@icons/social_github.png';
 import imageBrandColor from '@brand/brand_color.png';
+import imageBackground from '@bg/bg_light.jpg';
 
 import styles from '@styles/ComingSoon.module.scss';
 import Link from 'next/link';
@@ -23,6 +25,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className={styles.comingSoon}>
+        <div className={styles.bgWrap}>
+          <Img alt="Texture Monogato" src={imageBackground} layout="fill" objectFit="cover" quality={100} priority />
+        </div>
         <div className={styles.container}>
           <div className={styles.mainInfo}>
             <h1 className={styles.title}>
@@ -47,7 +52,7 @@ export default function Home() {
           </div>
           <aside className={styles.secondaryInfo}>
             <div className={styles.memoji}>
-              <Image src={memojiCallMe} alt="Contact me - Monogato" width={300} height={300} priority />
+              <Image src={memojiCallMe} alt="Contact me - Monogato" width={300} height={300} />
             </div>
             <div className={styles.getInTouch}>
               <h2 className={styles.title}>Get in touch:</h2>

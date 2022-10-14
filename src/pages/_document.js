@@ -8,6 +8,9 @@ class MyDocument extends Document {
           <meta charSet="UTF-8" />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link rel="canonical" href="https://www.monogato.co" />
+          <link rel="alternate" href="https://www.monogato.co" hrefLang="x-default" />
+
           {/*FavIcon*/}
           <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
