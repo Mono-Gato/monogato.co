@@ -32,16 +32,16 @@ export default function Home() {
           <div className={styles.mainInfo}>
             <h1 className={styles.title}>
               Hi there
-              <Image className={styles.title__emoji} src={emojiWavingHand} alt="Waving Hand" width={65} height={65} />
+              <Image className={styles.title__emoji} src={emojiWavingHand} alt="Waving Hand" width={65} height={65} unoptimized />
               , I’m
-              <Image className={styles.title__logo} src={imageBrandColor} alt="Monogato" width={215} height={72} />
+              <Image className={styles.title__logo} src={imageBrandColor} alt="Monogato" width={215} height={72} unoptimized />
             </h1>
             <p>
               My name is Juan David Niño mostly know as Monogato, I’m a <span className={styles.bold}>UI/UX Designer</span> and <span>FrontEnd Developer</span> for the web.
             </p>
             <div className={styles.featured}>
               <h3>
-                <Image src={emojiBriefcase} className={styles.featured__emoji} alt="icon briefcase" width={36} height={36} /> My new web portfolio is coming soon
+                <Image src={emojiBriefcase} className={styles.featured__emoji} alt="icon briefcase" width={36} height={36} unoptimized /> My new web portfolio is coming soon
               </h3>
             </div>
             <Link href="https://drive.google.com/file/d/1lEKc1iVXuXB2PKAliUMvOlyVodl2gFzb/view?usp=sharing">
@@ -60,7 +60,7 @@ export default function Home() {
                 <li className={styles.social__item}>
                   <Link href="https://www.linkedin.com/in/monogato/">
                     <a target="_blank">
-                      <Image src={iconSocialLinkedIn} alt="LinkedIn Monogato" width={60} height={60} />
+                      <Image src={iconSocialLinkedIn} alt="LinkedIn Monogato" width={60} height={60} unoptimized />
                       <p>LinkedIn</p>
                     </a>
                   </Link>
@@ -68,7 +68,7 @@ export default function Home() {
                 <li className={styles.social__item}>
                   <Link href="https://github.com/Mono-Gato">
                     <a target="_blank">
-                      <Image src={iconSocialGitHub} alt="GitHub Monogato" width={60} height={60} />
+                      <Image src={iconSocialGitHub} alt="GitHub Monogato" width={60} height={60} unoptimized />
                       <p>GitHub</p>
                     </a>
                   </Link>
@@ -76,7 +76,7 @@ export default function Home() {
                 <li className={styles.social__item}>
                   <Link href="http://www.behance.net/monogato">
                     <a target="_blank">
-                      <Image src={iconSocialBehance} alt="Behance Monogato" width={60} height={60} />
+                      <Image src={iconSocialBehance} alt="Behance Monogato" width={60} height={60} unoptimized />
                       <p>Behance</p>
                     </a>
                   </Link>
@@ -84,7 +84,7 @@ export default function Home() {
                 <li className={styles.social__item}>
                   <Link href="https://www.instagram.com/monogato.type/">
                     <a target="_blank">
-                      <Image src={iconSocialInstragram} alt="Instagram Monogato" width={60} height={60} />
+                      <Image src={iconSocialInstragram} alt="Instagram Monogato" width={60} height={60} unoptimized />
                       <p>Instagram</p>
                     </a>
                   </Link>
