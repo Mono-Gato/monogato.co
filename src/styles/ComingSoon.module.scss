@@ -6,10 +6,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('../static/images/bg/bg_light.jpg');
+  /*background-image: url('../static/images/bg/bg_light.jpg');
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
+  .bgWrap {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
   .container{
     display: flex;
     justify-content: center;
