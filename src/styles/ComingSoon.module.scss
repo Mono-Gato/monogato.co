@@ -155,14 +155,20 @@
               font-size: $font_s;
               color: $color_altern-50;
               transition: .3s all ease-out;
-              transform: scale(1);
+              transform: translateY(0);
               img{
                 object-fit: contain;
                 width: 45px;
                 height: 45px;
+                transform: scale(1);
+                transition: .3s all ease-out;
               }
               &:hover{
-                transform: scale(1.08);
+                transform: translateY(-10px); 
+                img{
+                  transform: scale(1.08);
+                  
+                }
               }
             }
           }
