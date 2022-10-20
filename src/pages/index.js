@@ -37,7 +37,7 @@ export default function Home() {
               <Image className={styles.title__logo} src={imageBrandColor} alt="Monogato" width={215} height={72} unoptimized />
             </h1>
             <p>
-              My name is Juan David Niño mostly know as Monogato, I’m a <span className={styles.bold}>UI/UX Designer</span> and <span>FrontEnd Developer</span> for the web.
+              My name is Juan David Niño mostly know as Monogato, I’m a <span className={styles.bold}>UI/UX Designer</span> and <span className={styles.bold}>FrontEnd Developer</span> for the web.
             </p>
             <div className={styles.featured}>
               <h3>
@@ -46,7 +46,7 @@ export default function Home() {
             </div>
             <Link href="https://drive.google.com/file/d/1lEKc1iVXuXB2PKAliUMvOlyVodl2gFzb/view?usp=sharing">
               <a target="_blank" className={(styles.button__primary, styles.button)}>
-                Download CV <Image className={styles.button__emoji} src={emojiWrittingHand} alt="icon writting hand" width={36} height={36} />
+                Download CV <Image className={styles.button__emoji} src={emojiWrittingHand} alt="icon writting hand" width={36} height={36} unoptimized />
               </a>
             </Link>
           </div>
