@@ -1,4 +1,4 @@
-@import './_vars.scss';
+@import './vars.scss';
 
 .comingSoon{
   padding: $spacing_md;
@@ -25,6 +25,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-width: $viewport_maxwidth;
     .mainInfo{
       .title{
         font-family: $font_primary;
@@ -138,9 +139,10 @@
         }
         .social{
           display: flex;
+          flex-wrap: wrap;
           justify-content: center;
           align-items: center;
-          gap:$spacing_xl;
+          gap:$spacing_lg;
           &__item{
             list-style: none;
             a{
@@ -153,14 +155,20 @@
               font-size: $font_s;
               color: $color_altern-50;
               transition: .3s all ease-out;
-              transform: scale(1);
+              transform: translateY(0);
               img{
                 object-fit: contain;
                 width: 45px;
                 height: 45px;
+                transform: scale(1);
+                transition: .3s all ease-out;
               }
               &:hover{
-                transform: scale(1.08);
+                transform: translateY(-10px); 
+                img{
+                  transform: scale(1.08);
+                  
+                }
               }
             }
           }
@@ -170,18 +178,68 @@
     }
   }
 }
-
-@media (min-width: 900px){
-
+@media (min-width: 365px){
   .comingSoon{
-    padding: 48px;
     .container{
-      max-width: 1320px;
-      flex-direction: row;
-      gap: 40px;
+      .secondaryInfo{
+        .getInTouch{
+          .social{
+            gap: $spacing_xl;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 576px){
+  .comingSoon{
+    .container{
       .mainInfo{
         .title{
-          font-size: 60px;
+          &__logo{
+            margin-bottom: -36px;
+            margin-left: 16px;
+            width: 250px;
+            height: auto;
+          }
+        }
+        .featured{
+          &__emoji{
+            width: 28px;
+            height: 28px;
+            margin-bottom: -5px;
+          }
+        }
+        .button{
+          &__emoji{
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+      .secondaryInfo{
+        .getInTouch{
+          .social{
+            &__item{
+              a{
+                min-width: 60px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px){
+  .comingSoon{
+    padding: $spacing_xl;
+    .container{
+      flex-direction: row;
+      gap: $spacing_md;
+      .mainInfo{
+        .title{
           text-align: left;
           &__emoji{
             width: 65px;
@@ -190,36 +248,25 @@
             margin-left: 8px;
           }
           &__logo{
-            margin-bottom: -40px;
-            margin-left: 16px;
-            height: 96px;
-            width: 288px;
+            margin-left: 0;
           }
         }
         p{
-          font-size: 36px;
           text-align: left;
-          margin-top: calc($spacing_lg + 40px);
         }
         .featured{
-          padding: 20px;
           border-radius: 12px;
-          margin:40px 0 0;
+          margin:$spacing_lg 0 0;
           &__emoji{
             width: 36px;
             height: 36px;
-            margin-right: $spacing_xs;
             margin-bottom: -3px;
           }
-          h3{
-            font-size: 32px;
-          }
+
         }
         .button{
-          margin: 40px 0 0;
-          padding: 20px 32px;
+          margin: $spacing_lg 0 0;
           border-radius: 12px;
-          font-size: 32px;
           border-bottom: 5px solid transparent;
           &__emoji{
             width: 40px;
@@ -235,16 +282,11 @@
           display: flex;
         }
         .getInTouch{
-          padding-top: 75px;
-          .title{
-            font-size: 40px;
-            margin-bottom: 40px;
-          }
           .social{
+            flex-wrap: nowrap;
             &__item{
               a{
-                min-width: 57px;
-                font-size: 16px;
+                min-width: 65px;
                 img{
                   width: 60px;
                   height: 60px;
@@ -254,6 +296,36 @@
           }
         }
   
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1200px){
+  .comingSoon{
+    .container{
+      .mainInfo{
+        .title{
+          &__emoji{
+            margin-bottom: -4px;
+          }
+          &__logo{
+            margin-left: $spacing_s;
+            width: 280px;
+            margin-bottom: -40px;
+          }
+        }
+        .featured{
+          &__emoji{
+            margin-bottom: -7px;
+          }
+        }
+      }
+      .secondaryInfo{
+        .getInTouch{
+          padding-top: $spacing_xxl;
+        }
       }
     }
   }

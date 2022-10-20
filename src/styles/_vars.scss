@@ -13,15 +13,17 @@ $color_secondary-70: #511AB7;
 $color_secondary-80: #391093;
 $color_altern-50: #000043; 
 
-$font_s: 12px;
-$font_sm: 16px;
-$font_md: 20px;
-$font_lg: 24px;
-$font_xl: 40px;
+$font_s: var(--font_s);
+$font_sm: var(--font_sm) ;
+$font_md: var(--font_md);
+$font_lg: var(--font_lg);
+$font_xl: var(--font_xl);
 
-$spacing_xs: 4px;
-$spacing_s: 12px;
-$spacing_md: 16px;
-$spacing_lg: 24px;
-$spacing_xl: 36px;
-$spacing_xxl: 48px;
+$spacing_xs: var(--spacing_xs);
+$spacing_s: var(--spacing_s);
+$spacing_md: var(--spacing_md);
+$spacing_lg: var(--spacing_lg);
+$spacing_xl: var(--spacing_xl);
+$spacing_xxl: var(--spacing_xxl);
+
+$viewport_maxwidth: var(--viewport_maxwidth)

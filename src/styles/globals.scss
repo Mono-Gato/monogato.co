@@ -1,5 +1,74 @@
 @import './vars.scss';
 
+:root{
+  --font_s: 12px;
+  --font_sm: 16px;
+  --font_md: 20px;
+  --font_lg: 24px;
+  --font_xl: 36px;
+
+  --spacing_xs: 4px;
+  --spacing_s: 12px;
+  --spacing_md: 16px;
+  --spacing_lg: 24px;
+  --spacing_xl: 36px;
+  --spacing_xxl: 48px;
+
+  --viewport_maxwidth: 675px;
+}
+@media (min-width: 375px){
+  :root{
+    --font_xl: 40px;
+  }
+}
+@media (min-width: 575px){
+  :root{
+    --font_s: 14px;
+    --font_sm: 20px;
+    --font_md: 24px;
+    --font_lg: 28px;
+    --font_xl: 44px;
+
+    --spacing_md: 20px;
+    --spacing_lg: 28px;
+  }
+}
+@media (min-width: 992px){
+  :root{
+    --font_s: 16px;
+    --font_sm: 24px;
+    --font_md: 28px;
+    --font_lg: 32px;
+    --font_xl: 48px;
+
+    --spacing_xs: 4px;
+    --spacing_s: 16px;
+    --spacing_md: 24px;
+    --spacing_lg: 32px;
+    --spacing_xl: 40px;
+    --spacing_xxl: 60px;
+
+    --viewport_maxwidth: 1034px;
+  }
+  
+}
+@media (min-width: 1200px){
+  :root{
+    --font_sm: 28px;
+    --font_md: 32px;
+    --font_lg: 36px;
+    --font_xl: 54px;
+    --viewport_maxwidth: 1320px;
+  }
+}
+
+@media (min-width: 1400px){
+  :root{
+
+    --font_xl: 60px;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -14,7 +83,7 @@ html {
 body {
   margin: 0;
   font-family: $font_primary;
-  min-width: 280px;
+  min-width: 320px;
   max-width: 100vw;
   color: $color_altern-50;
   font-weight: 300;
