@@ -1,10 +1,22 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head>
+          <Script strategy="afterInteractive" async src="https://www.googletagmanager.com/gtag/js?id=G-V6HYMKJ51Z"></Script>
+          <Script
+            id="google-analytics"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-V6HYMKJ51Z');`,
+            }}
+          />
           <meta charSet="UTF-8" />
           <link rel="canonical" href="https://www.monogato.co" />
           <link rel="alternate" href="https://www.monogato.co" hrefLang="x-default" />
