@@ -44,7 +44,7 @@ export default function Home() {
                 <Image src={emojiBriefcase} className={styles.featured__emoji} alt="icon briefcase" width={36} height={36} unoptimized /> My new web portfolio is coming soon
               </h3>
             </div>
-            <Link href="https://drive.google.com/file/d/1lEKc1iVXuXB2PKAliUMvOlyVodl2gFzb/view?usp=sharing">
+            <Link href="https://drive.google.com/file/d/1qhSYRlf0oPA5KKXtPH1uqYEd_kKxtJ87/view?usp=sharing">
               <a target="_blank" className={(styles.button__primary, styles.button)}>
                 Download CV <Image className={styles.button__emoji} src={emojiWrittingHand} alt="icon writting hand" width={36} height={36} unoptimized />
               </a>
